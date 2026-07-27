@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Droptop Roleplay V2</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:linear-gradient(135deg,#050b18,#081629,#0d2345);
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+color:white;
+overflow:hidden;
+}
+
+body::before{
+content:"";
+position:fixed;
+width:100%;
+height:100%;
+background:radial-gradient(circle,#00bfff22,transparent 70%);
+animation:glow 5s infinite alternate;
+}
+
+@keyframes glow{
+from{transform:scale(1);}
+to{transform:scale(1.2);}
+}
+
+.card{
+position:relative;
+width:95%;
+max-width:430px;
+background:rgba(255,255,255,.08);
+backdrop-filter:blur(18px);
+border:1px solid rgba(255,255,255,.15);
+border-radius:25px;
+padding:30px;
+text-align:center;
+box-shadow:0 0 40px rgba(0,191,255,.35);
+z-index:2;
+}
+
+.logo{
+width:220px;
+margin-bottom:20px;
+}
+
+h1{
+font-size:34px;
+color:#58c7ff;
+}
+
+p{
+margin:15px 0 25px;
+color:#ddd;
+}
+
+input{
+width:100%;
+padding:15px;
+margin:10px 0;
+border:none;
+border-radius:12px;
+background:#101827;
+color:white;
+font-size:16px;
+}
+
+button{
+width:100%;
+padding:16px;
+margin-top:20px;
+border:none;
+border-radius:12px;
+background:#00bfff;
+color:white;
+font-size:18px;
+font-weight:bold;
+cursor:pointer;
+transition:.3s;
+}
+
+button:hover{
+transform:scale(1.03);
+background:#0099ff;
+}
+
+.footer{
+margin-top:20px;
+font-size:13px;
+color:#9ca3af;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="card">
+
+<img src="logo.png" class="logo" alt="Droptop Roleplay">
+
+<h1>Donationer</h1>
+
+<p>Stötta Droptop Roleplay V2 ❤️</p>
+
+<input type="number" placeholder="Belopp (SEK)">
+<input type="text" placeholder="Discord-namn">
+
+<button>💙 Betala med Swish</button>
+
+<div class="footer">
+© 2026 Droptop Roleplay V2
+</div>
+
+</div>
+
+</body>
+</html>
